@@ -16,6 +16,13 @@ type ItemStyle = {
   container: ViewStyle;
 };
 
+type ModalStyle = {
+  itemStyle: ItemStyle;
+  container: ViewStyle;
+  searchStyle?: ViewStyle;
+  tileStyle?: TextStyle;
+};
+
 export type DialogCurrencyProps = {
   onSelectItem: (item: CurrencyData) => void;
   title?: string;
@@ -23,12 +30,7 @@ export type DialogCurrencyProps = {
   textEmpty?: string;
   setVisible: (visible: boolean) => void;
   darkMode?: boolean;
-  modalStyle?: {
-    itemStyle: ItemStyle;
-    container: ViewStyle;
-    searchStyle?: ViewStyle;
-    tileStyle?: TextStyle;
-  };
+  modalStyle?: ModalStyle;
   showCloseButton?: boolean;
   showModalTitle?: boolean;
   showCurrencySymbol?: boolean;
@@ -55,7 +57,7 @@ export type CurrencyPickerProps = {
   onOpen?: () => void;
   onClose?: () => void;
   containerStyle?: ItemStyle;
-  modalStyle?: DialogCurrencyProps['modalStyle'];
+  modalStyle?: ModalStyle;
   title?: string;
   searchPlaceholder?: string;
   textEmpty?: string;
