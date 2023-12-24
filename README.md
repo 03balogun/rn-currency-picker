@@ -22,7 +22,8 @@ yarn add rn-currency-picker
 
 ```js
 
-import CurrencyPicker from "react-native-currency-picker"
+import { CurrencyPickerComponent } from 'rn-currency-picker'
+
 
 export default function App() {
   const currencyPickerRef = React.useRef < CurrencyPickerRef > ();
@@ -37,7 +38,7 @@ export default function App() {
     onPress={() => currencyPickerRef.current?.close()}
   />
 
-  return <CurrencyPicker
+  return <CurrencyPickerComponent
     currencyPickerRef={(ref) => {
       currencyPickerRef.current = ref;
     }}
