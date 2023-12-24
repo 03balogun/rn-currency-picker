@@ -27,10 +27,6 @@ import CurrencyPicker from "react-native-currency-picker"
 export default function App() {
   const currencyPickerRef = React.useRef < CurrencyPickerRef > ();
 
-// use currencyPickerRef
-  currencyPickerRef.open();
-  currencyPickerRef.close();
-
   <Button
     title={'Open picker'}
     onPress={() => currencyPickerRef.current?.open()}
