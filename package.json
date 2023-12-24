@@ -43,7 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/03balogun/rn-currency-picker.git"
   },
-  "author": "Wahab Balogun <03balogun@gmail.com> (https://github.com/03balogun)",
+  "author": "Wahab Balogun <github@bwahab.com> (https://github.com/03balogun)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/03balogun/rn-currency-picker/issues"
@@ -159,5 +159,9 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "react-native-status-bar-height": "^2.6.0"
   }
 }
