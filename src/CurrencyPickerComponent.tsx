@@ -2,6 +2,11 @@ import React, { type FC } from 'react';
 import { CurrencyPicker } from './screens';
 import { type CurrencyPickerProps } from './types';
 
+export type CurrencyPickerRef = {
+  open: () => void;
+  close: () => void;
+};
+
 const DEFAULT_OPTIONS = {
   onSelectCurrency: () => {},
   style: {},
